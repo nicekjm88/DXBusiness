@@ -316,7 +316,7 @@ Create date : 2019-08-14
   height: 720px; }
 
 #footer {
-  height: 200px;
+  height: 240px;
   background-color: #f9f9f9;
   text-align: center; }
   #footer h2 {
@@ -805,3 +805,11 @@ Create date : 2019-08-14
   100% {
     margin-top: 20px;
     opacity: 0; } }
+.active-bar {
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  height: 9px;
+  background-color: #ccf0fb;
+  transition: all .3s
+}
