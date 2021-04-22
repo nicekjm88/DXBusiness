@@ -27,7 +27,7 @@ function render() {
 
   setTimeout(function() {
     $('.mouse').show();
-  }, 7000);
+  }, 5000);
 }
 
 $(function() {
