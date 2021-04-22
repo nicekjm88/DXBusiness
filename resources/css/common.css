@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+Author : 김지만
+Create date : 
+-------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:url('../fonts/NotoSansKR-DemiLight.otf');
+  src:url('../fonts/NotoSansKR-DemiLight.woff2?v=2.2.0') format('woff2'),
+      url('../fonts/NotoSansKR-DemiLight.woff?v=2.2.0') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:url('../fonts/NotoSansKR-DemiLight.otf');
+  src:url('../fonts/NotoSansKR-DemiLight.woff2?v=2.2.0') format('woff2'),
+      url('../fonts/NotoSansKR-DemiLight.woff?v=2.2.0') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:url('../fonts/NotoSansKR-Medium.otf');
+  src:url('../fonts/NotoSansKR-Medium.woff2?v=2.2.0') format('woff2'),
+      url('../fonts/NotoSansKR-Medium.woff?v=2.2.0') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src:url('../fonts/NotoSansKR-Bold.otf');
+  src:url('../fonts/NotoSansKR-Bold.woff2?v=2.2.0') format('woff2'),
+      url('../fonts/NotoSansKR-Bold.woff?v=2.2.0') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/* reset.css */
+html{ scroll-behavior: smooth; font-size:10px; box-sizing:border-box; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; font-family:'Montserrat', 'Noto Sans KR', sans-serif;}
+*,*:before,*:after{ box-sizing:inherit;}
+body {margin:0; padding:0; font-size:1.6rem; line-height:1.25; color:#333;}
+ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style: none;}
+p,h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+a {color:inherit; text-decoration:none;}
+img {border: 0;	vertical-align:middle; font-size:0; max-width: 100%;}
+table{border-collapse:collapse; border-spacing:0; width:100%;}
+caption,legend{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+select, input, textarea{color: #454545; font-size: 1.6rem;}
+select, input {vertical-align: middle;}
+b, strong{font-weight:700;}
+address,em,i{font-style:normal;}
+button{border:0; background:none; cursor:pointer; color: inherit;}
+hr{margin: 0; border: none; padding: 0; display:block;}
+figure, figcaption{padding:0; margin:0;}
+fieldset{border: none; padding: 0; margin: 0;}
+input[type="submit"] {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+header, footer, article, section, aside, nav, main {display: block;}
+button,input,optgroup,select,textarea { font-family: inherit; font-size: inherit; font-weight:inherit; margin: 0;}
+
+/* Skip to content */
+.skip-to { position: absolute; top: -99px; left: 0; background: #333; color: #fff; width: 100%; padding: 10px 0; text-align: center; text-decoration: none; z-index: 999; }
+.skip-to:hover,.skip-to:focus,.skip-to:active { display: block; top: 0; }
+.a11y {
+  position: absolute !important;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.img-responsive { max-width: 100%; display: block; margin: 0 auto; }
+
+/* Align */
+.txt-left {text-align:left !important;}
+.txt-center {text-align:center !important;}
+.txt-right {text-align:right !important;}
+
+.float-left {float:left !important;}
+.float-right {float:right !important;}
+
+.clearfix { position: relative; }
+.clearfix:after { content: ""; display: block; clear: both; }
+
+.form-control { display: inline-block; width: 100%; height: 40px; padding:10px 20px; font-size: 14px; line-height: 1.42857143; color: #666; background-color: #fff; background-image: none; border: 1px solid #e0dede; font-family:inherit; }
+textarea.form-control { height: inherit; resize: none; }
+.form-control.xs { width: 75px; }
+.form-control.sm { width: 100px; }
+.form-control.md { width: 130px; }
+.form-control.lg { width: 240px; }
+.form-control.xl { width: 300px; }
+.form-control.xxl { width: 700px; }
+.form-control.normal { width: auto; }
+.form-control::placeholder{color:#666;}
+
+.btn { display: block; margin-bottom: 0; font-size: 16px; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #333; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding: 6px 12px; font-family:inherit; }
+.btn:hover, 
+.btn:focus { transition: all .25s ease; -webkit-transition: all .25s ease; }
+.btn.xs { width: 75px; }
+.btn.sm { width: 100px; }
+.btn.md { width: 125px; }
+.btn.lg { width: 150px; }
+.btn.xl { width: 185px; }
+.btn.xxl { width: 230px; }
+.btn.normal { width: auto; }
+
+/* ...생성 */
+.substring { position: relative; padding-right: 15px; font-weight: 400; }
+.substring:after { position: absolute; bottom: 0; right: 0; content: "..."; font-size: 14px; }
+
+/* 반응형 아이프레임, 오브젝트, 엠베디드 */
+.embed-container { position: relative; padding-bottom: 40%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
