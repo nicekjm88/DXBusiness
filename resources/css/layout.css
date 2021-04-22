@@ -751,8 +751,7 @@ Create date : 2019-08-14
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%); 
-}
+  transform: translateX(-50%); }
 
 #visual .mouse-icon {
   width: 25px;
