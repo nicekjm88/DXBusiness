@@ -5,12 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DX BUSINESS</title>
-  <link rel="stylesheet" type="text/css" href="./resources/css/xeicon.min.css">
-  <link rel="stylesheet" type="text/css" href="./resources/css/aos.css" />
-  <link rel="stylesheet" type="text/css" href="./resources/css/grid.css" />
-  <link rel="stylesheet" type="text/css" href="./resources/css/common.css" />  
-  <link rel="stylesheet" type="text/css" href="./resources/css/layout.css" />
-  
+  <link rel="stylesheet" type="text/css" href="../resources/css/xeicon.min.css">
+  <link rel="stylesheet" type="text/css" href="../resources/css/aos.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/css/common.css" />  
+  <link rel="stylesheet" type="text/css" href="../resources/css/layout.css" />
+  <style>
+    .active-bar {
+      position: absolute;
+      top: 10px;
+      z-index: -1;
+      height: 9px;
+      background-color: #ccf0fb;
+      transition: all .3s
+    }
+  </style>
 
 </head>
 <body id="body">
@@ -23,7 +32,7 @@
       <h1 class="logo"><a href="#body">DX Business</a></h1>
     </div>
     <div class="col-md-10">
-      <nav>
+      <nav id="nav">
         <ol>
           <li><a href="#anchor1">DX Works</a></li>
           <li><a href="#anchor2">DX Job Details</a></li>
@@ -34,12 +43,36 @@
       </nav>
     </div>
   </div>
+<span class="scrollbar"></span>  
 </header>
 
 	<main id="main">
 	  <div id="visual">
-      <p class="txt-title"><strong>RECRUITMENT</strong><br>DX BUSINESS</p>
-      <img class="bg" src="./resources/images/bg_visual.jpg" alt="bg">
+        <div class="txt-title">
+          <strong class="letters">
+            <span class="letter">R</span>
+            <span class="letter">E</span>
+            <span class="letter">C</span>
+            <span class="letter">R</span>
+            <span class="letter">U</span>
+            <span class="letter">I</span>
+            <span class="letter">T</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+            <span class="letter">N</span>
+            <span class="letter">T</span>
+          </strong>
+          <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="2700">DX BUSINESS</p>          
+        </div>
+
+      <img class="bg" src="../resources/images/bg_visual.jpg" alt="bg">
+
+
+      <div class="mouse" hidden>
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>        
+      </div>
 		</div>
 
     <article id="contents">      
@@ -64,7 +97,7 @@
           <h2 data-aos="fade-up">DX Works</h2>
           <div class="row">
             <div class="col-md-6">
-              <img src="./resources/images/bg_scene3.gif" alt="" data-aos="fade" data-aos-delay="700" data-aos-duration="2000">
+              <img src="../resources/images/bg_scene3.gif" alt="" data-aos="fade" data-aos-delay="700" data-aos-duration="2000">
             </div>
             <div class="col-md-6">
               <ul class="list list-dotted">
@@ -80,57 +113,59 @@
           <div id="anchor2"></div>
           <div class="bar" data-aos="fade-down"></div>
           <h2 data-aos="fade-up">DX Job Details</h2>
-          <ul class="area-square">
-            <li>
-              <strong>
-                UX Architect
-                <span>기획자</span>
-              </strong>              
-              <ul>
-                <li>사이트 기능 개발</li>
-                <li>데이터를 활용한 서비스를 제공</li>
-                <li>보안 및 DB 관리</li>
-                <li>서버 안정화</li>
-              </ul>
-            </li>
-            <li>
-              <strong>
-                Web Designer
-                <span>웹디자이너</span>
-              </strong>
-              <ul>
-                <li>사이트 기능 개발</li>
-                <li>데이터를 활용한 서비스를 제공</li>
-                <li>보안 및 DB 관리</li>
-                <li>서버 안정화</li>
-              </ul>
-            </li>
-            <li>
-              <strong>
-                Web Publisher
-                <span>웹퍼블리셔</span>
-              </strong>
-              <ul>
-                <li>사이트 기능 개발</li>
-                <li>데이터를 활용한 서비스를 제공</li>
-                <li>보안 및 DB 관리</li>
-                <li>서버 안정화</li>
-              </ul>
-            </li>
-            <li>
-              <strong>
-                Developer
-                <span>개발자</span>
-              </strong>
-              <ul>
-                <li>사이트 기능 개발</li>
-                <li>데이터를 활용한 서비스를 제공</li>
-                <li>보안 및 DB 관리</li>
-                <li>서버 안정화</li>
-              </ul>
-            </li>
-            
-          </ul>
+          <div class="wrap-area-square">
+            <div class="x-bar1"></div>
+            <div class="x-bar2"></div>
+            <ul class="area-square">
+              <li>
+                <strong>
+                  UX Architect
+                  <span>기획자</span>
+                </strong>              
+                <ul>
+                  <li>UX·UI 기획 및 스토리보드 작성</li>
+                  <li>고객 요구 사항, 고객 여정 분석</li>
+                  <li>User Flow, Test Case 작성</li>
+                  <li>프로젝트 매니징</li>
+                </ul>
+              </li>
+              <li>
+                <strong>
+                  Web Designer
+                  <span>웹디자이너</span>
+                </strong>
+                <ul>
+                  <li>UX·UI 디자인(화면 구성 및 시각화)</li>
+                  <li>와이어 프레임 컴포넌트 가이드 작성</li>
+                  <li>상세페이지 및 각종 디자인</li>
+                  <li>서버 안정화</li>
+                </ul>
+              </li>
+              <li>
+                <strong>
+                  Web Publisher
+                  <span>웹퍼블리셔</span>
+                </strong>
+                <ul>
+                  <li>웹표준 및 웹접근성, 크로스 브라우징을 준수하는 코드 구성</li>
+                  <li>사이트 구축 및 운영 코딩 작업</li>
+                </ul>
+              </li>
+              <li>
+                <strong>
+                  Developer
+                  <span>개발자</span>
+                </strong>
+                <ul>
+                  <li>사이트 기능 개발</li>
+                  <li>데이터를 활용한 서비스를 제공</li>
+                  <li>보안 및 DB 관리</li>
+                  <li>서버 안정화</li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
         </div>
         <div class="area-gray">
           <div class="container">
@@ -138,7 +173,7 @@
             <h2 data-aos="fade-up">DX Future Plans</h2>
             <div class="row">
               <div class="col-md-6">
-                <img src="./resources/images/bg_scene3_2.jpg" alt="" data-aos="fade" data-aos-delay="600" data-aos-duration="2000">
+                <img src="../resources/images/bg_scene3_2.jpg" alt="" data-aos="fade" data-aos-delay="600" data-aos-duration="2000">
               </div>
               <div class="col-md-6">
                 <ul class="list list-dotted small-size">
@@ -192,7 +227,7 @@
           <h2 data-aos="fade-up">DX Desired Talent</h2>
           <div class="row">
             <div class="col-md-6">
-              <img src="./resources/images/bg_scene5.gif" alt="" data-aos="fade" data-aos-delay="600" data-aos-duration="2000">
+              <img src="../resources/images/bg_scene5.gif" alt="" data-aos="fade" data-aos-delay="600" data-aos-duration="2000">
             </div>
             <div class="col-md-6">
               <ul class="list list-dotted">
@@ -207,7 +242,7 @@
 
           <div class="area-flag">
             <p  data-aos="flip-left">
-              <img src="./resources/images/i_flag.gif" alt="" class="flag">
+              <img src="../resources/images/i_flag.gif" alt="" class="flag">
             </p>            
             <p data-aos="fade-up" data-aos-delay="100">
               <strong>관심이 있으신 분이라면 누구나 환영합니다.</strong>
@@ -234,68 +269,10 @@
     </div>	  
 	</footer>
 
-
-<script src="./resources/js/vendors/jquery-2.2.4.min.js"></script>
-<script src="./resources/js/vendors/aos.js"></script>
-<script src="./resources/js/vendors/swiper.min.js"></script>
-<script src="./resources/js/vendors/ScrollMagic.min.js"></script>
-<script src="./resources/js/common.js"></script>
-<script src="./resources/js/main.js"></script>
-<script>
-  AOS.init({
-    offset: 300,
-    duration: 750,
-  });
-    
-  var controller = new ScrollMagic.Controller();
-  
-  var scene_list = '.scene1, .scene2, .scene3, .scene4, .scene5'.split(', ');
-  scene_list.forEach(function(triggerElSelector){
-    var scene = new ScrollMagic.Scene({
-      triggerElement: triggerElSelector,
-      triggerHook: .6,
-    })
-    .on('start end enter leave', function(e) {
-
-      // if ($('.scene1').hasClass('is-active')) {
-        
-      // }  
-      // if ($('.scene2').hasClass('is-active')) {
-        
-      // }
-      // if ($('.scene3').hasClass('is-active')) {
-
-      // }
-      // if ($('.scene4').hasClass('is-active')) {
-
-      // }
-  
-      if (e.type === 'start') {
-
-      } else if (e.type === 'leave') {
-
-      }
-    })
-    .setClassToggle(triggerElSelector, 'is-active')
-    //.addIndicators()
-    .addTo(controller);
-  });
-    
-  $(window).scroll(function(){
-    if ( $(window).scrollTop() === 0 ) {
-      console.log('최상위');
-
-    }
-    if($(window).scrollTop()>280){
-      $("#snav").addClass("fixed");
-       $('.top').fadeIn();
-    }else{
-      $("#snav").removeClass("fixed");
-       $('.top').fadeOut();
-    };
-  });
-
-</script>
-
+<script src="../resources/js/vendors/jquery-2.2.4.min.js"></script>
+<script src="../resources/js/vendors/aos.js"></script>
+<script src="../resources/js/vendors/swiper.min.js"></script>
+<script src="../resources/js/vendors/ScrollMagic.min.js"></script>
+<script src="../resources/js/common.js"></script>
 </body>
 </html>
